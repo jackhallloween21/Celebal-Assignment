@@ -1,38 +1,69 @@
-.App {
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh; /* Vertically center */
 }
 
-.App-link {
-  color: #61dafb;
+
+.main form,
+.main .details {
+  width: 600px;
+  border: 1px solid #ddd;
+  margin: 15px;
+  padding: 23px;
+  text-align: center;
+  /* Remove margin-left to allow flex centering */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main .details > div {
+  margin: 15px;
+  font-weight: 200;
+}
+
+.main .details > h3 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+}
+
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 300px;
+}
+
+input{
+  padding: 15px;
+  margin: 10px
+}
+
+
+button {
+  padding: 10px;
+  margin: 5px;
+}
+
+h3 {
+  margin: 5px;
+  padding: 15px 15px 0px 15px;
+  font-weight: 300;
+}
+
+.errorMsg {
+  padding: 5px;
+  margin: 0px;
+  font-size: 11px;
+  color: red;
 }
