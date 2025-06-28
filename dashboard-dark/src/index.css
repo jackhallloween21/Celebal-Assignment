@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 dark:bg-gray-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400 dark:bg-gray-500;
+}
+
+/* Calendar styles */
+.rbc-calendar {
+  @apply bg-white dark:bg-gray-800 text-gray-900 dark:text-white;
+}
+
+.rbc-header {
+  @apply bg-gray-50 dark:bg-gray-700 text-gray-700 dark:text-gray-200 border-gray-200 dark:border-gray-600;
+}
+
+.rbc-month-view {
+  @apply border-gray-200 dark:border-gray-600;
+}
+
+.rbc-day-bg {
+  @apply border-gray-200 dark:border-gray-600;
+}
+
+.rbc-today {
+  @apply bg-blue-50 dark:bg-blue-900/20;
+}
+
+.rbc-event {
+  @apply bg-blue-500 dark:bg-blue-600;
+}
